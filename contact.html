@@ -4,178 +4,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Your Name</title>
+    <title>Contact | Daniel</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav>
+    <nav class="main-nav">
         <div class="nav-container">
-            <a href="index.html" class="logo">YourName</a>
-            <div class="nav-links">
-                <a href="index.html">Work</a>
-                <a href="contact.html" class="active">Contact</a>
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link">DANIEL</a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="index.html#journey" class="nav-link">JOURNEY</a>
+                <a href="index.html#moments" class="nav-link">MOMENTS</a>
+                <a href="contact.html" class="nav-link active">CONTACT</a>
             </div>
         </div>
     </nav>
 
     <!-- Contact Hero -->
-    <section class="contact-hero">
-        <div class="hero-container">
+    <header class="contact-hero">
+        <div class="hero-content">
             <div class="hero-line"></div>
-            <h1>Get in Touch</h1>
-            <p class="hero-subtitle">Available for new projects and collaborations. Let's create something exceptional together.</p>
+            <h1 class="hero-title">CONNECT</h1>
+            <p class="hero-subtitle">
+                For collaborations, conversations, or shared interests.
+            </p>
+        </div>
+    </header>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="section-container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="info-section">
+                        <h3 class="info-title">CONTACT INFORMATION</h3>
+
+                        <div class="contact-method">
+                            <div class="method-label">EMAIL</div>
+                            <a href="mailto:hello@daniel.com" class="method-link">hello@daniel.com</a>
+                            <p class="method-note">For formal inquiries and collaborations</p>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-label">SOCIAL</div>
+                            <div class="social-links">
+                                <div class="social-item">
+                                    <div class="social-name">小红书</div>
+                                    <div class="social-handle">ID: 26265070490</div>
+                                </div>
+                                <div class="social-item">
+                                    <div class="social-name">INSTAGRAM</div>
+                                    <div class="social-handle">@daniel_journey</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-label">BASED IN</div>
+                            <div class="location">Shanghai, China</div>
+                            <p class="method-note">Available for connections worldwide</p>
+                        </div>
+                    </div>
+
+                    <div class="info-quote">
+                        <div class="quote-mark">"</div>
+                        <p class="quote-text">The quality of your life is determined by the quality of your relationships.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3 class="form-title">SEND A MESSAGE</h3>
+                    <p class="form-subtitle">Please share your thoughts or inquiries below.</p>
+
+                    <form class="message-form">
+                        <div class="form-group">
+                            <div class="form-label">NAME</div>
+                            <input type="text" class="form-input" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-label">EMAIL</div>
+                            <input type="email" class="form-input" placeholder="Your email address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-label">SUBJECT</div>
+                            <select class="form-select" required>
+                                <option value="" disabled selected>Select a subject</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="conversation">Conversation</option>
+                                <option value="question">Question</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-label">MESSAGE</div>
+                            <textarea class="form-textarea" placeholder="Your message..." rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">SEND MESSAGE</span>
+                            <div class="btn-arrow">→</div>
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Contact Content -->
-    <section class="contact-content">
-        <div class="contact-container">
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <div class="info-section">
-                    <h3>Contact Information</h3>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <div class="contact-label">Email</div>
-                            <a href="mailto:your@email.com" class="contact-link">your@email.com</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <div class="contact-label">Phone</div>
-                            <a href="tel:+1234567890" class="contact-link">+1 234 567 890</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <div class="contact-label">Location</div>
-                            <div class="contact-text">Your City, Country</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info-section">
-                    <h3>Social</h3>
-                    <div class="social-links">
-                        <a href="#" class="social-link">
-                            <i class="fab fa-behance"></i>
-                            <span>Behance</span>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                            <span>Instagram</span>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-linkedin-in"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                    </div>
-                </div>
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">FREQUENTLY ASKED</h2>
             </div>
 
-            <!-- Contact Form -->
-            <div class="contact-form-section">
-                <h3>Start a Project</h3>
-                <p class="form-subtitle">Tell me about your project and I'll get back to you within 24 hours.</p>
-
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What do you share on 小红书?</h3>
+                        <div class="faq-toggle">+</div>
                     </div>
-
-                    <div class="form-group">
-                        <input type="email" placeholder="Email Address" required>
+                    <div class="faq-answer">
+                        <p>I share moments from daily life, travel experiences, design discoveries, and personal reflections on living with intention.</p>
                     </div>
+                </div>
 
-                    <div class="form-group">
-                        <select required>
-                            <option value="" disabled selected>Project Type</option>
-                            <option value="branding">Brand Identity</option>
-                            <option value="editorial">Editorial Design</option>
-                            <option value="packaging">Packaging Design</option>
-                            <option value="other">Other</option>
-                        </select>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you collaborate with brands?</h3>
+                        <div class="faq-toggle">+</div>
                     </div>
-
-                    <div class="form-group">
-                        <textarea placeholder="Project Details" rows="5" required></textarea>
+                    <div class="faq-answer">
+                        <p>Yes, I selectively collaborate with brands that align with my values of authenticity, quality, and aesthetic sensibility.</p>
                     </div>
+                </div>
 
-                    <button type="submit" class="submit-btn">
-                        <span>Send Message</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </button>
-                </form>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What does "奢雅胜境" mean to you?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>It represents a pursuit of refined experiences—not just luxury, but meaningful engagement with quality, beauty, and intentional living.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="main-footer">
         <div class="footer-container">
-            <div class="footer-left">
-                <div class="logo">YourName</div>
-                <p>© 2024 All rights reserved</p>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">DANIEL</div>
+                    <p class="footer-tagline">Documenting the journey since 2018</p>
+                </div>
+
+                <div class="footer-middle">
+                    <nav class="footer-nav">
+                        <a href="index.html">HOME</a>
+                        <a href="index.html#journey">JOURNEY</a>
+                        <a href="index.html#moments">MOMENTS</a>
+                        <a href="contact.html">CONTACT</a>
+                    </nav>
+                </div>
+
+                <div class="footer-right">
+                    <a href="index.html" class="footer-cta">HOME →</a>
+                </div>
             </div>
-            <div class="footer-right">
-                <a href="index.html" class="back-link">
-                    <span>View Work</span>
-                    <div class="arrow">←</div>
-                </a>
+
+            <div class="footer-bottom">
+                <div class="copyright">© 2025 DANIEL. ALL RIGHTS RESERVED.</div>
+                <div class="footer-note">A PERSONAL JOURNEY DOCUMENTATION</div>
             </div>
         </div>
     </footer>
 
     <script>
-        // Form submission
-        const form = document.querySelector('.contact-form');
-        if (form) {
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
+        // Contact page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Form submission
+            const form = document.querySelector('.message-form');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
 
-                // Get form data
-                const name = this.querySelector('input[type="text"]').value;
+                    // Get form data
+                    const name = this.querySelector('.form-input').value;
+                    const submitBtn = this.querySelector('.submit-btn');
+                    const originalText = submitBtn.querySelector('.btn-text').textContent;
 
-                // Simple validation
-                if (!name || !this.querySelector('input[type="email"]').value) {
-                    alert('Please fill in all required fields');
-                    return;
-                }
+                    // Show sending state
+                    submitBtn.querySelector('.btn-text').textContent = 'SENDING...';
+                    submitBtn.disabled = true;
 
-                // Show success message
-                alert(`Thank you ${name}! Your message has been sent. I'll get back to you soon.`);
+                    // Simulate sending
+                    setTimeout(() => {
+                        alert(`Thank you ${name}. Your message has been sent. I'll respond within 48 hours.`);
 
-                // Reset form
-                this.reset();
-            });
-        }
-
-        // Navigation scroll effect
-        window.addEventListener('scroll', function() {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 50) {
-                nav.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-                nav.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
-            } else {
-                nav.style.backgroundColor = 'transparent';
-                nav.style.boxShadow = 'none';
+                        // Reset form and button
+                        submitBtn.querySelector('.btn-text').textContent = originalText;
+                        submitBtn.disabled = false;
+                        form.reset();
+                    }, 1500);
+                });
             }
+
+            // FAQ accordion
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const item = this.parentElement;
+                    const answer = item.querySelector('.faq-answer');
+                    const toggle = this.querySelector('.faq-toggle');
+
+                    // Close other open items
+                    document.querySelectorAll('.faq-item').forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                            otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                            otherItem.querySelector('.faq-toggle').textContent = '+';
+                        }
+                    });
+
+                    // Toggle current item
+                    if (item.classList.contains('active')) {
+                        item.classList.remove('active');
+                        answer.style.maxHeight = null;
+                        toggle.textContent = '+';
+                    } else {
+                        item.classList.add('active');
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        toggle.textContent = '−';
+                    }
+                });
+            });
+
+            // Navigation scroll effect
+            const nav = document.querySelector('.main-nav');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+
+            // Update copyright year
+            document.querySelector('.copyright').innerHTML = `© ${new Date().getFullYear()} DANIEL. ALL RIGHTS RESERVED.`;
         });
     </script>
 </body>
