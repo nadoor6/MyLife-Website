@@ -33,6 +33,7 @@ body {
     color: var(--black);
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
+    background-color: red !important;
 }
 
 
