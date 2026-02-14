@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diyar — luxury real estate</title>
-    <!-- minimal, refined typography: light serif for presence, airy sans for detail -->
+    <!-- refined typography: light serif for presence, airy sans for detail -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
     <style>
-        /* RESET & BASE — pure white, soft dark grey, nothing else */
+        /* ---------- RESET & BASE ---------- */
         
         * {
             margin: 0;
@@ -28,16 +28,75 @@
             line-height: 1.5;
             min-height: 100vh;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            /* subtle breathing room */
-            padding: 1.5rem;
+            flex-direction: column;
         }
-        /* main content capsule – absolute minimal interference */
+        /* ---------- SUPER MINIMAL HEADER ---------- */
+        
+        .site-header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.8rem 2.5rem;
+            /* generous breathing space */
+            background: transparent;
+            /* pure white (inherited from body) */
+            letter-spacing: 0.05em;
+        }
+        /* logo container – holds your PNG */
+        
+        .logo-container {
+            max-height: 32px;
+            /* adapt to your logo height */
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo {
+            max-height: 100%;
+            /* keeps aspect ratio */
+            width: auto;
+            display: block;
+        }
+        /* contact us – discreet, elegant, all caps */
+        
+        .contact-link {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+            /* ultra‑light */
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.4em;
+            color: #4a4a4a;
+            /* medium‑dark grey */
+            transition: color 0.25s ease;
+            cursor: default;
+            /* no actual link (pure aesthetics) */
+            padding: 0.2rem 0;
+            border-bottom: 1px solid transparent;
+        }
+        /* subtle interaction – like a whisper */
+        
+        .contact-link:hover {
+            color: #1f1f1f;
+            /* slightly deeper grey */
+            border-bottom-color: #c0c0c0;
+        }
+        /* ---------- MAIN CENTERED BRAND CORE ---------- */
         
         .brand-core {
-            max-width: 64rem;
+            flex: 1;
+            /* takes remaining vertical space */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             width: 100%;
+            max-width: 80rem;
+            /* generous but not endless */
+            margin: 0 auto;
+            padding: 1rem 2rem 3rem 2rem;
+            /* balanced breathing */
             text-align: center;
         }
         /* super‑luxury presence: tall, thin, letter‑spaced */
@@ -47,9 +106,7 @@
             font-weight: 300;
             /* light, almost ethereal */
             font-size: clamp(3.5rem, 18vw, 10rem);
-            /* scales gracefully */
             letter-spacing: 0.15em;
-            ·/* refined breathing */
             color: #1f1f1f;
             /* deeper grey for anchor */
             text-transform: uppercase;
@@ -61,9 +118,8 @@
         .divider {
             width: 6rem;
             height: 0.5px;
-            · ·/* barely there */
+            /* barely there */
             background-color: #a1a1a1;
-            /* mid‑grey, subtle */
             margin: 2rem auto 1.8rem auto;
             opacity: 0.7;
         }
@@ -72,13 +128,10 @@
         .tagline {
             font-family: 'Montserrat', sans-serif;
             font-weight: 200;
-            ·/* ultra‑light */
             font-size: clamp(0.9rem, 3vw, 1.2rem);
             letter-spacing: 0.45em;
-            /* wide, hushed elegance */
             text-transform: uppercase;
             color: #4a4a4a;
-            /* medium-dark grey */
             margin-bottom: 2.5rem;
             word-spacing: 0.2em;
         }
@@ -104,14 +157,19 @@
         
         .quiet-footer a:hover {
             border-bottom-color: #9b9b9b;
-            ·/* only the faintest interaction */
         }
-        /* everything is centred, airy, minimal — no unnecessary blocks */
+        /* ---------- ADAPT FOR SMALL SCREENS ---------- */
         
-        @media (max-width: 480px) {
+        @media (max-width: 600px) {
+            .site-header {
+                padding: 1.2rem 1.5rem;
+            }
+            .contact-link {
+                font-size: 0.8rem;
+                letter-spacing: 0.3em;
+            }
             .brand-name {
                 letter-spacing: 0.1em;
-                /* adapt on small screens */
             }
             .divider {
                 width: 4rem;
@@ -126,29 +184,43 @@
 
 <body>
     <!-- 
-    SUPER LUXURY · MINIMAL REAL ESTATE — DIYAR 
-    Only essence: white background, dark grey text, invisible architecture.
-    No demos, no noise — just presence.
+    ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+    SUPER LUXURY · MINIMAL REAL ESTATE — DIYAR
+    HEADER: logo placeholder (top‑left) + contact (top‑right)
+    ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
   -->
+    <header class="site-header">
+        <!-- 
+      LOGO PLACEHOLDER – INSERT YOUR PNG HERE 
+      STEP BY STEP:
+        1. Save your logo as a PNG file (e.g., "diyar-logo.png").
+        2. Place it inside an "images" folder (or any folder you prefer).
+        3. Update the src attribute below with the correct relative path.
+           Example: src="images/diyar-logo.png"
+        4. If your logo has a different aspect ratio, you may adjust the 
+           max-height in .logo-container (currently 32px) to fit perfectly.
+    -->
+        <div class="logo-container">
+            <img src="path/to/your-logo.png" alt="Diyar" class="logo">
+        </div>
+
+        <!-- CONTACT US – pure text, no redirection, just minimalist aesthetics -->
+        <div class="contact-link">Contact Us</div>
+    </header>
+
+    <!-- MAIN CENTERED CONTENT (unchanged from previous step) -->
     <div class="brand-core">
-        <!-- the name — absolute centre of gravity -->
         <h1 class="brand-name">Diyar</h1>
-
-        <!-- thin grey divider — like a custom‑made steel rule -->
         <div class="divider" aria-hidden="true"></div>
-
-        <!-- what Diyar embodies — under one breath -->
         <p class="tagline">Luxury real estate</p>
-
-        <!-- almost hidden invitation — because true luxury is discreet -->
         <div class="quiet-footer">
             <span>—</span> <a href="#">inquiry@diyar.ae</a> <span>—</span>
         </div>
     </div>
 
     <!-- 
-    no extra markup, no demo placeholders.
-    pure foundation: white · dark grey · air · Diyar.
+    absolutely no demos – only quiet luxury, white space, and dark grey.
+    the header now frames the brand without disturbing its serenity.
   -->
 </body>
 
