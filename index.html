@@ -1,33 +1,155 @@
-<div class="wrapper">
+<!DOCTYPE html>
+<html lang="en">
 
-    <section class="section grid">
-        <div class="grid-left">
-            <h1>
-                I design my life<br> with intention,<br> discipline, and clarity.
-            </h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diyar — luxury real estate</title>
+    <!-- minimal, refined typography: light serif for presence, airy sans for detail -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    <style>
+        /* RESET & BASE — pure white, soft dark grey, nothing else */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #ffffff;
+            /* immaculate white */
+            color: #2b2b2b;
+            /* deep, quiet grey – not harsh black */
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            line-height: 1.5;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* subtle breathing room */
+            padding: 1.5rem;
+        }
+        /* main content capsule – absolute minimal interference */
+        
+        .brand-core {
+            max-width: 64rem;
+            width: 100%;
+            text-align: center;
+        }
+        /* super‑luxury presence: tall, thin, letter‑spaced */
+        
+        .brand-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 300;
+            /* light, almost ethereal */
+            font-size: clamp(3.5rem, 18vw, 10rem);
+            /* scales gracefully */
+            letter-spacing: 0.15em;
+            ·/* refined breathing */
+            color: #1f1f1f;
+            /* deeper grey for anchor */
+            text-transform: uppercase;
+            margin-bottom: 0.25rem;
+            line-height: 1.1;
+        }
+        /* a single, thin architectural line — like a horizon */
+        
+        .divider {
+            width: 6rem;
+            height: 0.5px;
+            · ·/* barely there */
+            background-color: #a1a1a1;
+            /* mid‑grey, subtle */
+            margin: 2rem auto 1.8rem auto;
+            opacity: 0.7;
+        }
+        /* understated descriptor — quiet, spacious, luxurious */
+        
+        .tagline {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+            ·/* ultra‑light */
+            font-size: clamp(0.9rem, 3vw, 1.2rem);
+            letter-spacing: 0.45em;
+            /* wide, hushed elegance */
+            text-transform: uppercase;
+            color: #4a4a4a;
+            /* medium-dark grey */
+            margin-bottom: 2.5rem;
+            word-spacing: 0.2em;
+        }
+        /* a faint, almost secret contact — luxury never shouts */
+        
+        .quiet-footer {
+            margin-top: 4rem;
+            font-size: 0.85rem;
+            font-weight: 300;
+            letter-spacing: 0.2rem;
+            color: #8a8a8a;
+            text-transform: uppercase;
+            border-top: none;
+        }
+        
+        .quiet-footer a {
+            color: #5a5a5a;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+            padding-bottom: 2px;
+        }
+        
+        .quiet-footer a:hover {
+            border-bottom-color: #9b9b9b;
+            ·/* only the faintest interaction */
+        }
+        /* everything is centred, airy, minimal — no unnecessary blocks */
+        
+        @media (max-width: 480px) {
+            .brand-name {
+                letter-spacing: 0.1em;
+                /* adapt on small screens */
+            }
+            .divider {
+                width: 4rem;
+                margin: 1.5rem auto;
+            }
+            .tagline {
+                letter-spacing: 0.3em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    SUPER LUXURY · MINIMAL REAL ESTATE — DIYAR 
+    Only essence: white background, dark grey text, invisible architecture.
+    No demos, no noise — just presence.
+  -->
+    <div class="brand-core">
+        <!-- the name — absolute centre of gravity -->
+        <h1 class="brand-name">Diyar</h1>
+
+        <!-- thin grey divider — like a custom‑made steel rule -->
+        <div class="divider" aria-hidden="true"></div>
+
+        <!-- what Diyar embodies — under one breath -->
+        <p class="tagline">Luxury real estate</p>
+
+        <!-- almost hidden invitation — because true luxury is discreet -->
+        <div class="quiet-footer">
+            <span>—</span> <a href="#">inquiry@diyar.ae</a> <span>—</span>
         </div>
+    </div>
 
-        <div class="grid-right">
-            <p>
-                This website is a quiet documentation of who I am, what I have built, and the path I chose over the last five years.
-            </p>
+    <!-- 
+    no extra markup, no demo placeholders.
+    pure foundation: white · dark grey · air · Diyar.
+  -->
+</body>
 
-            <p>
-                Nothing here is loud. Everything here is intentional. I believe in long-term thinking, restraint, and creating value that does not require explanation.
-            </p>
-        </div>
-    </section>
-
-    <section class="section">
-        <h2>Approach</h2>
-
-        <p>
-            I focus on mastery, consistency, and clarity. Every decision I make is filtered through purpose, responsibility, and longevity.
-        </p>
-    </section>
-
-    <footer>
-        © Your Name
-    </footer>
-
-</div>
+</html>
