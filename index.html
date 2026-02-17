@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diyar</title>
-    <!-- Super luxury, super minimal: only white & dark grey -->
+    <title>Diyar — luxury real estate</title>
+    <!-- refined serif for understated elegance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Elegant, thin serif for the name — quiet presence -->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        /* absolute reset: white background, no distractions */
+        /* reset & base – pure white background */
         
         * {
             margin: 0;
@@ -21,33 +20,94 @@
         
         body {
             background: #ffffff;
-            /* pure white */
-            color: #2b2b2b;
-            /* dark, soft grey – not black */
+            color: #1f1f1f;
+            /* dark, soft grey */
             font-family: 'Cormorant Garamond', serif;
-            /* refined serif for a subtle luxury */
             min-height: 100vh;
+        }
+        /* ----- super minimal luxury header (white rectangle, subtle shadow) ----- */
+        
+        .header {
+            width: 100%;
+            background: #ffffff;
+            /* pure white */
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.02);
+            /* barely-there light shadow */
+            padding: 1.2rem 2.5rem;
+            /* generous breathing space */
             display: flex;
             align-items: center;
-            justify-content: center;
-            line-height: 1;
+            position: sticky;
+            /* optional – keeps header visible */
+            top: 0;
+            z-index: 10;
         }
-        /* the only element: the brand name, centered, weightless */
+        /* brand name – top left, all caps, light weight */
         
         .brand {
-            font-size: clamp(3rem, 15vw, 10rem);
+            font-size: 1.8rem;
+            font-weight: 300;
+            /* ultra light */
+            letter-spacing: 0.2em;
+            /* air between letters */
             text-transform: uppercase;
-            text-align: center;
-            user-select: none;
-            /* preserves the pure aesthetic */
+            color: #2b2b2b;
+            transition: color 0.2s ease;
+            line-height: 1;
+            /* if you later replace with a logo, simply remove this text 
+         and insert an <img> tag with your PNG */
         }
-        /* no dividers, no taglines, no footer — just the essence */
+        /* optional: very faint hover to maintain minimal interaction */
+        
+        .brand:hover {
+            color: #4a4a4a;
+        }
+        /* the rest of the page – nothing but silence */
+        
+        .content {
+            /* you can leave this empty – just white space */
+        }
+        /* for demonstration, a subtle spacer – but you can remove it */
+        
+        .spacer {
+            height: 100vh;
+            /* just to show the header shadow on scroll; remove if not needed */
+        }
+        /* adjust for smaller screens */
+        
+        @media (max-width: 600px) {
+            .header {
+                padding: 1rem 1.5rem;
+            }
+            .brand {
+                font-size: 1.5rem;
+                letter-spacing: 0.15em;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <!-- The entire statement: Diyar, in silence -->
-    <div class="brand">Diyar</div>
+    <!-- 
+    ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+    WHITE RECTANGLE HEADER WITH SUBTLE SHADOW
+    DIYAR on top left – pure, minimal, luxurious
+    ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+  -->
+    <header class="header">
+        <!-- brand name as text – replace with your logo PNG if needed:
+         <img src="path/to/your-logo.png" alt="Diyar" style="height: 40px; width: auto;"> 
+    -->
+        <div class="brand">Diyar</div>
+    </header>
+
+    <!-- the rest of the page is intentionally blank – only white background
+       (you can add your own content later) -->
+    <div class="content"></div>
+
+    <!-- a spacer to demonstrate the shadow effect (remove in production) 
+       this just adds scroll to see the shadow; you can delete it. -->
+    <div class="spacer"></div>
 </body>
 
 </html>
