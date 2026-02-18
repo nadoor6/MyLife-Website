@@ -272,6 +272,105 @@ nav a:hover {
     margin-top: 50px;
 }
 
+
+/* LANGUAGES SECTION */
+
+.languages {
+    margin-top: 80px;
+    width: 100%;
+}
+
+.languages h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    color: var(--text-light);
+    position: relative;
+    display: inline-block;
+}
+
+.languages h3::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: white;
+    bottom: -10px;
+    left: 25%;
+    border-radius: 2px;
+}
+
+.languages-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.language-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 140px;
+}
+
+.language-name {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 12px;
+    color: var(--text-light);
+    letter-spacing: 0.5px;
+}
+
+.level {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    background: transparent;
+    border: 1px solid white;
+    transition: var(--transition);
+}
+
+.dot.filled {
+    background: white;
+    border-color: white;
+}
+
+.level-text {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-left: 5px;
+    font-weight: 300;
+}
+
+
+/* Responsive adjustment */
+
+@media (max-width: 600px) {
+    .languages-container {
+        gap: 30px;
+    }
+    .language-item {
+        min-width: 120px;
+    }
+    .dot {
+        width: 12px;
+        height: 12px;
+    }
+}
+
 .card {
     background: var(--card-bg);
     padding: 50px 30px;
