@@ -401,7 +401,7 @@ nav a:hover {
     font-weight: 300;
 }
 
-.coming-soon {
+.more-info {
     display: inline-block;
     border: 1px solid white;
     padding: 8px 25px;
@@ -410,10 +410,11 @@ nav a:hover {
     text-transform: uppercase;
     color: white;
     background: transparent;
+    text-decoration: none;
     transition: var(--transition);
 }
 
-.coming-soon:hover {
+.more-info:hover {
     background: white;
     color: black;
 }

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Diyar | Real Estate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Same fonts & icons as main site -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Reuse the same stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Any Diyar-specific tweaks can go here (optional) */
+        
+        .about-logo {
+            max-width: 245px;
+            /* adjust as needed */
+            width: 100%;
+            height: auto;
+            margin: 30px 0 0 20px;
+            /* centers and adds space below */
+            display: block;
+            border: none;
+            /* remove any default border */
+            border-radius: 0;
+            /* ensure no rounding */
+        }
+        
+        .header-logo {
+            height: 18px;
+            /* adjust to match your logo's proportions */
+            width: auto;
+            display: block;
+        }
+        
+        .hero-logo {
+            max-width: 450px;
+            /* adjust as needed */
+            width: 100%;
+            height: auto;
+            margin: 0 auto 20px;
+            /* centers and adds space below */
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-logo {
+                max-width: 200px;
+            }
+        }
+        
+        .diyar-logo-placeholder {
+            max-width: 200px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR (identical to main, but links point to Diyar sections) -->
+    <header>
+        <img src="logono.png" alt="Diyar" class="header-logo">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger"><i class="fas fa-bars"></i></label>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <!-- Optional: link back to main site -->
+            <a href="index.html" style="color: #888;">← Nader</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h3>REAL ESTATE · UNDER DEVELOPMENT</h3>
+            <img src="logono.png" alt="Diyar" class="hero-logo">
+            <p>Building spaces, creating communities.</p>
+            <div class="buttons">
+                <a href="#about" class="btn">Discover</a>
+                <a href="#contact" class="btn-outline">Get in touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <h2>About Diyar</h2>
+        <div class="about-container">
+            <!-- Replace with your Diyar logo -->
+            <img src="arlogo.png" alt="Diyar Logo" class="about-logo">
+            <p>
+                Diyar is an emerging real estate brand focused on modern living spaces. We believe in thoughtful design, prime locations, and sustainable development. This page will soon showcase our vision and upcoming projects.
+            </p>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION (like Skills) -->
+    <section id="services" class="section dark">
+        <h2>Our Services</h2>
+        <div class="skills-container">
+            <div class="card">
+                <i class="fas fa-home fa-3x"></i>
+                <h3>Residential</h3>
+                <p>Modern apartments and villas in prime locations.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-building fa-3x"></i>
+                <h3>Commercial</h3>
+                <p>Office spaces and retail units for businesses.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-chart-line fa-3x"></i>
+                <h3>Investment</h3>
+                <p>High‑yield opportunities for investors.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION (optional – similar to Ventures on main page) -->
+    <section id="projects" class="section">
+        <h2>Upcoming Projects</h2>
+        <div class="projects-container" style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; margin-top: 40px;">
+            <!-- Project card 1 -->
+            <div class="card" style="width: 260px;">
+                <img src="https://via.placeholder.com/300x200/333/777?text=Project+A" alt="Project A" style="width: 100%; height: 160px; object-fit: cover; margin-bottom: 15px;">
+                <h3>Project A</h3>
+                <p>Luxury apartments in the city center.</p>
+            </div>
+            <!-- Project card 2 -->
+            <div class="card" style="width: 260px;">
+                <img src="https://via.placeholder.com/300x200/333/777?text=Project+B" alt="Project B" style="width: 100%; height: 160px; object-fit: cover; margin-bottom: 15px;">
+                <h3>Project B</h3>
+                <p>Gated community with green spaces.</p>
+            </div>
+            <!-- Project card 3 -->
+            <div class="card" style="width: 260px;">
+                <img src="https://via.placeholder.com/300x200/333/777?text=Project+C" alt="Project C" style="width: 100%; height: 160px; object-fit: cover; margin-bottom: 15px;">
+                <h3>Project C</h3>
+                <p>Commercial hub opening soon.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section dark">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> nadernader777111@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +963 9422 70318</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/realnader_?igsh=ZjRjZjNmbXM2cnM%3D&utm_source=qr" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.threads.com/@realnader_?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener"><i class="fab fa-threads"></i></a>
+                    <a href="https://x.com/realnader_?s=21" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Diyar · under development</p>
+    </footer>
+
+</body>
+
+</html>
