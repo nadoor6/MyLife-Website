@@ -516,3 +516,26 @@ footer {
         height: 40px;
     }
 }
+
+
+/* Center contact info on all screens */
+
+.contact-info {
+    text-align: center;
+    align-items: center;
+    /* for flex column */
+}
+
+
+/* Keep the icon and text together, but centered */
+
+.contact-info p {
+    justify-content: center;
+}
+
+
+/* Center the social links container */
+
+.social-links {
+    justify-content: center;
+}
