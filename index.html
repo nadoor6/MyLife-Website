@@ -3,104 +3,75 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Nader | Personal Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nader — luxury real estate</title>
-    <!-- Montserrat: clean, geometric, quietly luxurious -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
-    <style>
-        /* reset & base – pure white background */
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            background: #ffffff;
-            color: #1f1f1f;
-            /* dark, soft grey */
-            font-family: 'Montserrat', sans-serif;
-            min-height: 100vh;
-        }
-        /* ----- super minimal luxury header (white rectangle, subtle shadow) ----- */
-        
-        .header {
-            width: 100%;
-            background: #ffffff;
-            /* pure white */
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
-            /* barely-there light shadow */
-            padding: 1.2rem 2.5rem;
-            /* generous breathing space */
-            display: flex;
-            align-items: center;
-            position: sticky;
-            /* optional – keeps header visible */
-            top: 0;
-            z-index: 10;
-        }
-        /* brand name – top left, lower case, ultra light montserrat */
-        
-        .brand {
-            font-size: 1.8rem;
-            font-weight: 800;
-            /* extra light – ethereal */
-            color: #2b2b2b;
-            transition: color 0.2s ease;
-            line-height: 1;
-            letter-spacing: -0.1rem;
-        }
-        
-        .brandBy {
-            font-weight: 300;
-        }
-        
-        .brand:hover {
-            color: #4a4a4a;
-        }
-        /* the rest of the page – nothing but silence */
-        
-        .spacer {
-            height: 100vh;
-            /* just to show the header shadow on scroll; remove if not wanted */
-        }
-        /* adjust for smaller screens */
-        
-        @media (max-width: 600px) {
-            .header {
-                padding: 1rem 1.5rem;
-            }
-            .brand {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- 
-    ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-    WHITE RECTANGLE HEADER WITH SUBTLE SHADOW
-    nader on top left – montserrat, pure minimal luxury
-    ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-  -->
-    <header class="header">
-        <!-- brand name now in lower case: "nader" -->
-        <div class="brandBy">by</div>
-        <div class="brand">nader</div>
 
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">NADER</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <!-- the rest of the page is intentionally blank – only white background
-       (you can add your own content later) -->
-    <div class="content"></div>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h3>WELCOME TO MY WORLD</h3>
+            <h1>Nader's Personal Space</h1>
+            <p>Building my life. One step at a time.</p>
+            <div class="buttons">
+                <a href="#about" class="btn">See More</a>
+                <a href="#contact" class="btn-outline">Contact Me</a>
+            </div>
+        </div>
+    </section>
 
-    <!-- a spacer to demonstrate the shadow effect (remove in production)
-       this just adds scroll to see the shadow; you can delete it. -->
-    <div class="spacer"></div>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm Nader. This website represents my journey, my goals, and my passion for growth. I believe in discipline, creativity, and building a meaningful life.
+        </p>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section dark">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="card">
+                <h3>Discipline</h3>
+                <p>Focused on long-term growth and self-improvement.</p>
+            </div>
+            <div class="card">
+                <h3>Learning</h3>
+                <p>Constantly improving and building new abilities.</p>
+            </div>
+            <div class="card">
+                <h3>Vision</h3>
+                <p>Working toward a powerful future with clarity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Email: your@email.com</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Nader. All rights reserved.</p>
+    </footer>
+
 </body>
 
 </html>
