@@ -356,6 +356,53 @@ nav a:hover {
 }
 
 
+/* CURRENTLY SECTION */
+
+.currently-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: 40px auto 0;
+}
+
+.currently-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 15px 25px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-light);
+    transition: var(--transition);
+}
+
+.currently-item:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    background: #1e1e1e;
+}
+
+.currently-item i {
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0.8;
+    width: 35px;
+    text-align: center;
+}
+
+.currently-item span {
+    font-size: 1rem;
+    color: var(--text-muted);
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+.currently-item:hover span {
+    color: var(--text-light);
+}
+
+
 /* VENTURES SECTION */
 
 .ventures-container {
